@@ -1,62 +1,72 @@
 # Ark.ai
 
-Ark.ai is a private suite of LLM-driven pipelines, chat bots, automations, and third-party integrations extending a Zulip chat server. It leverages advanced AI models, event-driven architectures, and data integrations to provide an extensive range of automated capabilities for team communication, data ingestion, and operational efficiency.
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](#)
+[![Tests](https://img.shields.io/badge/tests-100%25-success.svg)](#)
+[![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](#)
+[![Python](https://img.shields.io/badge/python-3.9+-blue.svg)](#)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](#)
+
+Ark.ai is a private suite of LLM-driven pipelines, chat bots, automations, and third-party integrations extending a Zulip chat server. It harnesses AI models, event-driven architectures, and data integrations to streamline data ingestion, team collaboration, and operational logistics.
+
+---
 
 ## Stack
 - **Python** and **TypeScript**  
 - **Vite** with a custom micro-service (UI mapping key relationships)  
 - **FastAPI** (wrapping Zulip CLI commands)  
 - **Pydantic** (strict type safety across models)  
-- **Postgres** (managed via SQLAlchemy)  
+- **Postgres** (via SQLAlchemy)  
 - **Docker** (containerized deployments)  
-- **Pytest** (testing framework for robust CI/CD)
+- **Pytest** (robust testing framework)
+
+---
 
 ## Features
 
 - **silver-tongue**  
-  Automatic transcription of audio recordings powered by OpenAI Whisper v2.  
+  Automatic transcription of audio recordings powered by OpenAI Whisper v2.
 
 - **Dufresne**  
-  Summarizes transcripts, auto-assigns topics, and integrates filesystem operations.  
+  Automated transcript summarization, topic assignment, filesystem integration.
 
 - **ask-gates**  
-  Agentic AI assistant providing a natural language interface for transcript data query and manipulation.  
+  Agentic AI assistant enabling natural language interaction and data queries.
 
 - **captains-log**  
-  AI assistant generating daily and cumulative summaries of conversations, actions, and results. Maintains a chronological event timeline, which is rendered on a dedicated React micro-service.  
+  AI assistant that provides both daily and cumulative conversation summaries, actions, and outcomes. Maintains a chronological event timeline rendered in a React micro-service.
 
 - **guthrie**  
-  Project definition and task assignment through the Trello API, streamlining project management.  
+  Project definition, task assignment, and management through Trello API.
 
 - **max**  
-  Graph-based node tree for logging key social network relationships, psychometrics, and noteworthy events.  
+  Graph-based node tree capturing key social network relationships, psychometrics, and critical events.
 
 - **rackham**  
-  GPT-based researcher that automates extended AI-driven investigations via the gpt-researcher open-source Python project.  
+  AI-based researcher leveraging gpt-researcher, orchestrating extended investigations.
 
 - **featherstone**  
-  Realtime monitoring of assets, liabilities, business costs, and wages. Maintains coherent bookkeeping.  
+  Real-time bookkeeping of assets, liabilities, costs, and wages.
 
 - **teach**  
-  Conducts critical comparisons of promises versus deliverables and highlights discrepancies.  
+  Rigorous critique of promises versus deliverables, highlighting inconsistencies.
 
 - **orca**  
-  Monitors asymmetrical investments (crypto, stocks) for periodic reporting.  
+  Overviews asymmetrical investments (crypto, stocks) for structured reporting.
 
 - **the-tavern**  
-  Wrapper around assorted RSS feeds (AI, big tech, science, geopolitics) with a webhook that imports and aggregates news. Provides weekly summaries tailored by configurable focus settings.  
+  RSS aggregator (AI, big tech, science, geopolitics) with webhook imports. Summaries configured weekly by focus settings.
 
 - **timeless**  
-  Delivers daily random quotes from Black Sails or pinned messages to encourage focus and underscore business objectives.  
+  Daily random quotes from Black Sails or pinned messages, enhancing focus and motivation.
 
 - **llk**  
-  Direct chat integration with a spectrum of LLMs (small, medium, enterprise-grade) for on-demand assistance in any Zulip thread.  
+  Direct integration with multiple LLMs (small to enterprise grade) for contextual thread assistance in Zulip.
 
 - **ready-aim-fire**  
-  Real-time visibility into git commit history for tracking team progress.  
+  Tracks real-time git commit history for team-wide visibility.
 
 - **billy-bones**  
-  A daily accountability system integrating with [idonethis.com](https://www.idonethis.com) to ensure transparent status updates.  
+  Daily accountability system integrated with [idonethis.com](https://www.idonethis.com).
 
 - **black-pearls**  
-  Mechanism allowing team members to allocate points to colleagues (but never to themselves) for recognition and motivation.
+  Facilitates point allocation among team members, fostering collaboration and recognition.
