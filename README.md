@@ -1,9 +1,9 @@
 # Ark.ai
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](#)
-[![Tests](https://img.shields.io/badge/tests-100%25-success.svg)](#)
+<!-- [![Tests](https://img.shields.io/badge/tests-100%25-success.svg)](#) -->
 [![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](#)
-[![Python](https://img.shields.io/badge/python-3.9+-blue.svg)](#)
+[![Python](https://img.shields.io/badge/python-3.11+-blue.svg)](#)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](#)
 
 Ark.ai is a private suite of LLM-driven pipelines, chat bots, automations, and third-party integrations extending a Zulip chat server. It harnesses AI models, event-driven architectures, and data integrations to streamline data ingestion, team collaboration, and operational logistics.
@@ -11,13 +11,23 @@ Ark.ai is a private suite of LLM-driven pipelines, chat bots, automations, and t
 ---
 
 ## Stack
-- **Python** and **TypeScript**  
-- **Vite** with a custom micro-service (UI mapping key relationships)  
-- **FastAPI** (wrapping Zulip CLI commands)  
-- **Pydantic** (strict type safety across models)  
-- **Postgres** (via SQLAlchemy)  
-- **Docker** (containerized deployments)  
-- **Pytest** (robust testing framework)
+
+### Backend
+- [FastAPI](https://fastapi.tiangolo.com/) for high-performance API handling, 
+- [PostgreSQL](https://www.postgresql.org/) with [pgvector](https://github.com/pgvector/pgvector) for robust data and vector storage, 
+- [Redis](https://redis.io/) and [Celery](https://docs.celeryq.dev/) for reliable task processing
+- [Pydantic](https://docs.pydantic.dev/) for strict type safety across models
+- [Docker](https://www.docker.com/) for containerized deployments
+- [Pytest](https://docs.pytest.org/) for robust testing framework
+- [OpenAI](https://openai.com/) and [Anthropic](https://www.anthropic.com/) for language model capabilities
+
+### Frontend
+- [Vite](https://vitejs.dev/) 
+- [React](https://react.dev/)
+- [TypeScript](https://www.typscriptlang.org/) 
+- [Tailwind](https://tailwindcss.com/)
+- [Vercel](https://vercel.com/) for deployment
+- [Zulip](https://zulip.com/) for chat server, hosted on [Digital Ocean](https://www.digitalocean.com/)
 
 ---
 
